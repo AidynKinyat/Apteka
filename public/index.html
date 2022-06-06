@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=35c1b1c7-1b83-4700-9167-d5fd1dff2af4&lang=ru_RU" type="text/javascript">
+    </script>
+
+    <title>Online Apteka</title>
+  </head>
+
+  <body>
+
+  <script type="text/javascript">
+    ymaps.ready(init);
+    function init(){
+      let myMap = new ymaps.Map("maps", {
+        center: [43.235112, 76.909957],
+        zoom: 11
+      });
+      myMap.geoObjects.add(new ymaps.Placemark([43.239659, 76.897819], {
+        balloonContent: '<strong>Europharma<br>проспект Абая, 139</strong>'
+      }, {
+        preset: 'islands#icon',
+        iconColor: '#b60000'
+      }));
+      myMap.geoObjects.add(new ymaps.Placemark([43.235515, 76.900388], {
+        balloonContent: '<strong>Аптека<br>улица Сатпаева, 55</strong>'
+      }, {
+        preset: 'islands#icon',
+        iconColor: '#b60000'
+      }));
+      myMap.geoObjects.add(new ymaps.Placemark([43.227737, 76.905239], {
+        balloonContent: '<strong>АптекаПлюс<br>улица Ауэзова, 175</strong>'
+      }, {
+        preset: 'islands#icon',
+        iconColor: '#b60000'
+      }));
+      myMap.geoObjects.add(new ymaps.Placemark([43.222351, 76.902247], {
+        balloonContent: '<strong>Аптека<br>улица Жарокова, 210А</strong>'
+      }, {
+        preset: 'islands#icon',
+        iconColor: '#b60000'
+      }));
+      myMap.geoObjects.add(new ymaps.Placemark([43.228178, 76.924615], {
+        balloonContent: '<strong>Рауза-Аде<br>микрорайон Коктем-1, 19</strong>'
+      }, {
+        preset: 'islands#icon',
+        iconColor: '#b60000'
+      }));
+      myMap.geoObjects.add(new ymaps.Placemark([43.233163, 76.924498], {
+        balloonContent: '<strong>Социальная аптека<br>бульвар Бухар Жырау, 20</strong>'
+      }, {
+        preset: 'islands#icon',
+        iconColor: '#b60000'
+      }));
+      myMap.geoObjects.add(new ymaps.Placemark([43.242338, 76.924193], {
+        balloonContent: '<strong>Asiapharm<br>улица Ади Шарипова, 120</strong>'
+      }, {
+        preset: 'islands#icon',
+        iconColor: '#b60000'
+      }));
+      myMap.geoObjects.add(new ymaps.Placemark([43.248144, 76.920205], {
+        balloonContent: '<strong>Аптека<br>улица Кабанбай Батыра, 137</strong>'
+      }, {
+        preset: 'islands#icon',
+        iconColor: '#b60000'
+      }));
+      myMap.geoObjects.add(new ymaps.Placemark([43.250934, 76.896004], {
+        balloonContent: '<strong>Ак-кайын<br>улица Толе Би, 190</strong>'
+      }, {
+        preset: 'islands#icon',
+        iconColor: '#b60000'
+      }));
+      myMap.geoObjects.add(new ymaps.Placemark([43.250488, 76.887344], {
+        balloonContent: '<strong>Dots-Pharm<br>улица Толе Би, 216</strong>'
+      }, {
+        preset: 'islands#icon',
+        iconColor: '#b60000'
+      }));
+      myMap.geoObjects.add(new ymaps.Placemark([43.268667, 76.936563], {
+        balloonContent: '<strong>Рауза-Аде<br>ул. Чайковского, 22А</strong>'
+      }, {
+        preset: 'islands#icon',
+        iconColor: '#b60000'
+      }));
+      myMap.geoObjects.add(new ymaps.Placemark([43.271654, 76.950154], {
+        balloonContent: '<strong>Europharma<br>просп. Суюнбая, 2/1</strong>'
+      }, {
+        preset: 'islands#icon',
+        iconColor: '#b60000'
+      }));
+      myMap.geoObjects.add(new ymaps.Placemark([43.199583, 76.880760], {
+        balloonContent: '<strong>Добрая<br>микрорайон Орбита-1, 21</strong>'
+      }, {
+        preset: 'islands#icon',
+        iconColor: '#b60000'
+      }));
+      myMap.geoObjects.add(new ymaps.Placemark([43.197907, 76.878882], {
+        balloonContent: '<strong>Рауза-Аде<br>микрорайон Орбита-4, 1</strong>'
+      }, {
+        preset: 'islands#icon',
+        iconColor: '#b60000'
+      }));
+      myMap.geoObjects.add(new ymaps.Placemark([43.199583, 76.880760], {
+        balloonContent: '<strong>Добрая<br>микрорайон Орбита-1, 21</strong>'
+      }, {
+        preset: 'islands#icon',
+        iconColor: '#b60000'
+      }));
+      myMap.geoObjects.add(new ymaps.Placemark([43.200825, 76.871606], {
+        balloonContent: '<strong>Садыхан<br>микрорайон Орбита-3, 30</strong>'
+      }, {
+        preset: 'islands#icon',
+        iconColor: '#b60000'
+      }));
+      myMap.geoObjects.add(new ymaps.Placemark([43.200825, 76.871606], {
+        balloonContent: '<strong>Садыхан<br>микрорайон Орбита-3, 30</strong>'
+      }, {
+        preset: 'islands#icon',
+        iconColor: '#b60000'
+      }));
+      myMap.geoObjects.add(new ymaps.Placemark([43.198164, 76.867842], {
+        balloonContent: '<strong>Аптека 11<br>улица Асанбая Аскарова, 10</strong>'
+      }, {
+        preset: 'islands#icon',
+        iconColor: '#b60000'
+      }));
+      myMap.geoObjects.add(new ymaps.Placemark([43.188410, 76.872603], {
+        balloonContent: '<strong>Аптека <br>микрорайон Мирас, 45</strong>'
+      }, {
+        preset: 'islands#icon',
+        iconColor: '#b60000'
+      }));
+      myMap.geoObjects.add(new ymaps.Placemark([43.166708, 76.879017], {
+        balloonContent: '<strong>БиоСфера<br>улица Кенесары Хана, 32</strong>'
+      }, {
+        preset: 'islands#icon',
+        iconColor: '#b60000'
+      }));
+      myMap.geoObjects.add(new ymaps.Placemark([43.164472, 76.891638], {
+        balloonContent: '<strong>DARIHANA<br>улица Мухаммед Хайдар Дулати, 55/2</strong>'
+      }, {
+        preset: 'islands#icon',
+        iconColor: '#b60000'
+      }));
+      myMap.geoObjects.add(new ymaps.Placemark([43.193892, 76.903595], {
+        balloonContent: '<strong>АНЦ<br>улица Мамыр, 1</strong>'
+      }, {
+        preset: 'islands#icon',
+        iconColor: '#b60000'
+      }));
+      myMap.geoObjects.add(new ymaps.Placemark([43.220859, 76.934272], {
+        balloonContent: '<strong>Абрал <br>проспект Аль-Фараби, 110</strong>'
+      }, {
+        preset: 'islands#icon',
+        iconColor: '#b60000'
+      }));
+      myMap.geoObjects.add(new ymaps.Placemark([43.221976, 76.933625], {
+        balloonContent: '<strong>Аптека 24 часа <br>улица Зейна Шашкина, 17</strong>'
+      }, {
+        preset: 'islands#icon',
+        iconColor: '#b60000'
+      }));
+      myMap.geoObjects.add(new ymaps.Placemark([43.228920, 76.932314], {
+        balloonContent: '<strong>Al-Madat <br>улица Маркова, 38А</strong>'
+      }, {
+        preset: 'islands#icon',
+        iconColor: '#b60000'
+      }));
+      myMap.geoObjects.add(new ymaps.Placemark([43.241071, 76.960359], {
+        balloonContent: '<strong>Forte Phatma <br>улица Луганского, 1</strong>'
+      }, {
+        preset: 'islands#icon',
+        iconColor: '#b60000'
+      }));
+      myMap.geoObjects.add(new ymaps.Placemark([43.246784, 76.859173], {
+        balloonContent: '<strong>БиоСфера<br>улица Толе Би, 279Б/1</strong>'
+      }, {
+        preset: 'islands#icon',
+        iconColor: '#b60000'
+      }));
+      myMap.geoObjects.add(new ymaps.Placemark([43.254480, 76.869063], {
+        balloonContent: '<strong>Провизор<br>умикрорайон Тастак-2, 10</strong>'
+      }, {
+        preset: 'islands#icon',
+        iconColor: '#b60000'
+      }));
+      myMap.geoObjects.add(new ymaps.Placemark([43.270978, 76.880894], {
+        balloonContent: '<strong>Аптека<br>улица Биянху, 278</strong>'
+      }, {
+        preset: 'islands#icon',
+        iconColor: '#b60000'
+      }));
+      myMap.geoObjects.add(new ymaps.Placemark([43.296199, 76.891405], {
+        balloonContent: '<strong>Аптека<br>улица Северное Кольцо, 12</strong>'
+      }, {
+        preset: 'islands#icon',
+        iconColor: '#b60000'
+      }));
+      myMap.geoObjects.add(new ymaps.Placemark([43.320307, 76.917411], {
+        balloonContent: '<strong>Садыхан<br>микрорайон Айнабулак-3, 98А</strong>'
+      }, {
+        preset: 'islands#icon',
+        iconColor: '#b60000'
+      }));
+      myMap.geoObjects.add(new ymaps.Placemark([43.249700, 76.901088], {
+        balloonContent: '<strong>Evi Car<br>улица Нурлы Жол, 7</strong>'
+      }, {
+        preset: 'islands#icon',
+        iconColor: '#b60000'
+      }));
+      myMap.geoObjects.add(new ymaps.Placemark([43.224486, 76.961877], {
+        balloonContent: '<strong>Мейир-Фарм<br>проспект Достык, 107</strong>'
+      }, {
+        preset: 'islands#icon',
+        iconColor: '#b60000'
+      }));
+      myMap.geoObjects.add(new ymaps.Placemark([43.251597, 76.966854], {
+        balloonContent: '<strong>Darihana <br>улица Кабанбай Батыра, 15</strong>'
+      }, {
+        preset: 'islands#icon',
+        iconColor: '#b60000'
+      }));
+      myMap.geoObjects.add(new ymaps.Placemark([43.249844, 76.956622], {
+        balloonContent: '<strong>Melissa <br>проспект Достык, 42</strong>'
+      }, {
+        preset: 'islands#icon',
+        iconColor: '#b60000'
+      }));
+      myMap.geoObjects.add(new ymaps.Placemark([43.263580, 76.952261], {
+        balloonContent: '<strong>Садыхан<br>улица Макатаева, 42, подъезд 5</strong>'
+      }, {
+        preset: 'islands#icon',
+        iconColor: '#b60000'
+      }));
+      myMap.geoObjects.add(new ymaps.Placemark([43.216372, 76.952149], {
+        balloonContent: '<strong>Аптека<br>улица Искендерова, 35Б</strong>'
+      }, {
+        preset: 'islands#icon',
+        iconColor: '#b60000'
+      }));
+      myMap.geoObjects.add(new ymaps.Placemark([43.232184, 76.953766], {
+        balloonContent: '<strong>EuroPharm <br>микрорайон Самал-2, 85</strong>'
+      }, {
+        preset: 'islands#icon',
+        iconColor: '#b60000'
+      }));
+
+
+
+
+
+    }
+  </script>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+
+    <div id="root"></div>
+
+
+  </body>
+</html>

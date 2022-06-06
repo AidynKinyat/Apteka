@@ -1,0 +1,382 @@
+/*для всех стр*/
+body, html{
+    margin: 0px;
+    padding: 0px;
+    margin-top: -10px; /*Верхний отступ*/
+    background-image: url("/src/assets/img/almaty.png");
+    background-size: cover;
+    background-position: right bottom; /* Положение фона */
+    background-position-x: 95%; /* Положение фона */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+/*---------------------ИКОНКА--------------*/
+.icon1{
+    width: 60px;
+    height: 36px;    
+}
+
+.img{
+    transition: 1s; /* Время эффекта */
+}
+.img:hover {
+    transform: scale(3); /* Увеличиваем масштаб */
+}
+
+.back1{
+    /*background-image: url('/src/img/2.jpg'); !*расположение к фото*!*/
+    background-size: cover;
+    animation: 2s linear infinite boxShadow;
+    border: 1px solid; 
+}
+.container{
+    margin: 0;
+    padding: 0;
+
+}
+.container ul, li{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.container a{
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+.header{
+    /*background-image: url(/src/img/1.jpg); !*расположение к фото*!*/
+    background-repeat: no-repeat;
+    height: 1024px;
+    padding: 0 10px 0 10px; 
+}
+.nav-bar{
+    height: 100px;
+}
+.nav__list{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    height: 100%;
+}
+.nav__link a{
+    font-size: 22px;
+    color: #333;
+}
+.nav__link1 a{
+    font-size: 22px;
+    color: white;
+}
+.header__title{
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header__title h1{
+    font-weight: 300;
+    font-size: 160px;
+    line-height: 237px;
+    color: #FFD69D; /*цвет h1*/
+}
+.header2{
+    background-repeat: no-repeat;
+    height: 1024px;
+    padding: 0 10px 0 10px;
+}
+.nav-bar2{
+    height: 100px;
+    margin-left: 2px;
+    margin-right: 20px;
+}
+.nav__list2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    color: white; /*цвет*/
+}
+.nav__link2 a{
+    font-size: 22px;
+    color: #333;
+}
+.osnov{
+    background: white; /*Цвет заднего фона*/
+    border-radius: 15px;
+    max-width: 1400px; /*+-+-+-*/
+    padding: 0px 15px 15px;
+    color: black; /*цвет*/
+    font-family: Arial, Helvetica, sans-serif; /*шрифт к блоку*/
+    margin: 0 auto;
+
+}
+
+@media (max-width: 1400px){
+    .osnov{
+        max-width: 970px;
+
+    }
+
+}
+@media (max-width: 927px){
+    .osnov{
+        max-width: 750px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #imgmin{
+        width: 50%;
+        height: 50%;
+    }
+}
+
+@media (max-width: 767px){
+    .osnov{
+        max-width: 427px;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .nav__link2 a{
+        font-size: 2px;/*НУЖНО СДЕЛАТЬ ТАК ЧТО БЫ ШРИФТ СТАЛ МЕНЬШЕ!!! КИШИРЕЙГЕНДЕ*/
+    }
+    #imgmin{
+        width: 50%;
+        height: 50%;
+    }
+}
+
+
+@media (max-width: 600px){
+    .osnov{
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        margin-top: 85px;
+        
+    }
+    body{
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+
+        
+    }
+    .osnov > p{
+        font-size: 17.8px;
+    }
+
+
+    .nav__list2{
+        display: flex;
+        align-items: center;
+        flex-direction: column ;
+        justify-content: center;
+        margin-top: 85px;
+    }
+    .header2{
+        margin-top:10px;
+    }
+    .nav__link1 > a{
+        font-size: 18px;
+    }
+}
+
+.ImageMe1{
+    float: right; /* Выравнивание по правому краю */ 
+    margin: 0 0 5px 5px;
+    max-width: 100%;
+    height: 380px;
+    animation: 2s linear infinite boxShadow;
+}
+@keyframes boxShadow{
+  from{
+    box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, -7px -5px 15px 5px #8CFF85, 12px -5px 15px 5px #80C7FF, 12px 10px 15px 7px #E488FF, -10px 10px 15px 7px #FF616B, -10px -7px 27px 1px #8E5CFF, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+50%{
+    box-shadow: 3px 3px 15px 5px #8E5CFF, -7px 3px 15px 5px #80C7FF, -5px -3px 15px 5px #FF616B, 10px -3px 15px 5px #FFE488 , 10px 8px 15px 7px #E488FF, -8px 8px 15px 7px #8CFF85, -8px -5px 27px 1px #FF616B, 3px 3px 15px 5px rgba(0,0,0,0);
+}
+to{
+    box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, -7px -5px 15px 5px #8CFF85, 12px -5px 15px 5px #80C7FF, 12px 10px 15px 7px #E488FF, -10px 10px 15px 7px #FF616B, -10px -7px 27px 1px #8E5CFF, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+}
+p{
+    font-size: 20px;
+}
+
+.familyph{
+    max-width: 100%;
+    height: 520px;
+    align: center;
+}
+
+.img{
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+}
+.textosnov{
+    border: 2px;
+    text-align: justify;
+    margin-left: 35px;
+    margin-right: 35px;
+}
+
+.osnov4 h1{
+    text-align: center;
+}
+.photocar{
+    max-width: 100%;
+    height: 520px;
+}
+.pre{
+    width: 510px;
+    height: 570px;
+}
+.pre1{
+    width: 700px;
+    height: 570px;
+}
+.osnov2{
+    background-color: rgba(255, 255, 255, 0.8); /*Цвет заднего фона*/
+    border-radius: 15px;
+    margin-top: 40px;
+    height: 690px;
+    width: 1050px;  
+    text-align: center; 
+    border: 1px solid gray;
+}
+
+.fud{
+    background-color: rgba(255, 255, 255, 0); /*Цвет заднего фона*/
+    border-radius: 0px; 
+    height: 200px;
+    width: 1000px;
+    margin: 10px; 
+    text-align: center; 
+    padding-top: 10px;
+}
+.fud-1{
+    display: flex; 
+    margin: auto; 
+    flex-direction: column;
+    align-items: center; 
+    padding: 15px; 
+    border: 1px solid silver;
+    background-color: rgba(240, 252, 252, 0);
+    width: 250px;
+}
+.fud-1 a{
+    text-decoration: none;
+    color: black;
+
+}
+.productlabel{
+    margin-bottom: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.label-1{
+    margin-bottom: 10px;
+}
+
+.itbest{
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+}
+.imgmy{
+    margin-top: 10px; /*Верхний отступ*/
+    width: 400px;
+    height: 320px;
+}
+/* --------------------СОЦИАЛЬНАЯ ИКОНКИ---------------------- */
+.box {
+
+    text-align: center;
+}
+.box ul {
+    list-style: none;
+    margin-top: 60px;
+}  
+.box ul li {
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border: solid 4px #ff0000;
+    display: inline-block;
+}
+
+.icon {
+    color: #ea86c6;
+    font-size: 1.7em;
+}
+.box ul li:hover {
+    border: solid 4px #b63a64;
+}
+.box ul li:hover .icon {
+    font-size: 1.5em;
+    color: #b63a64;
+}
+
+/*слайд-шоу*/
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+}
+
+.mySlides {
+    display: none;
+}
+
+.loginBackground{
+    background-image: url("../assets/img/iconforlog.jpg") ;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    0% {
+        opacity: 1;
+        -webkit-transform: translateX(-100px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+    }
+}
+
+@keyframes fade {
+    0% {
+        opacity: 1; /*прозрачность*/
+        transform: translateX(-100px); /*перемешение по Х*/
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 225px 225px 225px 225px 225px 225px;
+    padding: 15px;
+}
+.grid-item {
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 10px;
+    text-align: center;
+}
+.maps{
+    height: 400px;
+    width: 100%;
+}
