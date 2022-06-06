@@ -40,7 +40,7 @@ const RegisterPage = () => {
                 <div className="osnov2">
                     <br/>
                     <h1>
-                        <center>Welcome to our online-apteka</center>
+                        <center>online-aptek HELLO 111</center>
                     </h1>
                     <br/>
                     <center><h1>Sign Up</h1></center>
